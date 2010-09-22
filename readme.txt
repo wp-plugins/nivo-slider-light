@@ -11,15 +11,17 @@ The NIVO slider light plugin includes the JQuery NIVO Slider into your wordpress
 
 The NIVO slider can be used to create a simple gallery in your articles. It does not modify any other images or gallerys.
 
-Have a look at [the demos at nivo.dev7studios.com/demos](http://nivo.dev7studios.com/demos/).
+Have a look at the demos at [nivo.dev7studios.com/demos](http://nivo.dev7studios.com/demos/).
 
 After installing the plugin just write something like:
 
-`<div class="nivoSlider">
-	<img src="/uploads/slide1.jpg" alt="" />
-	<a href="http://dev7studios.com"><img src="/uploads/slide2.jpg" alt="" title="Go to NIVO" /></a>
-	<img src="/uploads/slide3.jpg" alt="" title="This is an example of a caption" />
-	<img src="/uploads/slide4.jpg" alt="" />
+`<div class="nivoSlider" style="height:200px; width:600px;">
+  <img src="/uploads/slide1.jpg" alt="" />
+  <img src="/uploads/slide2.jpg" alt="" />
+  <a href="http://dev7studios.com">
+    <img src="/uploads/slide3.jpg" alt="" title="Go to NIVO" />
+  </a>
+  <img src="/uploads/slide4.jpg" alt="" title="example caption" />
 </div>`
 
 Be sure that all images have the same size. Feel free to edit the plugin's source now as described in the [usage guide](http://nivo.dev7studios.com/).
@@ -29,19 +31,19 @@ Be sure that all images have the same size. Feel free to edit the plugin's sourc
 1. Upload directory `nivo-slider-light` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-The images in your <div class="nivoSlider"> elements will be used for the slider.
-
 == Frequently Asked Questions ==
 
 = Where is the homepage of NIVO? =
 
-For questions visit the [plugin homepage nivo.dev7studios.com](http://nivo.dev7studios.com/ "NIVO")
+For questions about NIVO visit the homepage [nivo.dev7studios.com](http://nivo.dev7studios.com/ "NIVO").
+
+Or ask the author of this Wordpress Plugin at [netaction.de](http://www.netaction.de/).
 
 == Changelog ==
 
 = 0.1 = 
 *	First release
 
-= 0.2 =
-* Many fixes
+= 1.0 =
+* stable version
 
