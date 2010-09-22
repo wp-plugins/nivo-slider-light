@@ -3,7 +3,7 @@
 Plugin Name: NIVO slider light
 Plugin URI: http://wordpress.org/extend/plugins/nivo-slider-light/
 Description: This is a wrapper for the jQuery plugin NIVO Image Slider from dev7studios.
-Version: 0.1
+Version: 0.2
 Author: Thomas Schmidt
 Author URI: http://netaction.de
 */
@@ -15,6 +15,7 @@ function NivoInit() {
 	wp_enqueue_script('jush', WP_PLUGIN_URL.'/nivo-slider-light/jquery.nivo.slider.pack.js', array('jquery'));
 
 	echo '<link type="text/css" rel="stylesheet" href="'.WP_PLUGIN_URL.'/nivo-slider-light/nivo-slider.css" />'."\n";
+	echo '<link type="text/css" rel="stylesheet" href="'.WP_PLUGIN_URL.'/nivo-slider-light/custom-nivo-slider.css" />'."\n";
 }
 
 
@@ -22,9 +23,11 @@ function NivoHeader() {
 ?>
 <script type="text/javascript">
 	$(function() {
-		$('.nivoslider').nivoSlider({
+		$(".nivoSlider br").each(function(){ // strip BR elements created by Wordpress
+			$(this).remove();
+		});
+		$('.nivoSlider').nivoSlider({
 			effect:'fade', //Specify sets like: 'random,fold,fade,sliceDown'
-			slices:15,
 			animSpeed:500, //Slide transition speed
 			pauseTime:3000,
 			startSlide:0, //Set starting Slide (0 index)
