@@ -3,7 +3,7 @@
 Plugin Name: NIVO slider light
 Plugin URI: http://wordpress.org/extend/plugins/nivo-slider-light/
 Description: This is a wrapper for the jQuery plugin NIVO Image Slider from dev7studios.
-Version: 1.1
+Version: 1.2
 Author: Thomas Schmidt
 Author URI: http://netaction.de
 */
@@ -13,9 +13,8 @@ function NivoInit() {
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', WP_PLUGIN_URL.'/nivo-slider-light/jquery-1.4.2.min.js', false, '1.4.2');
 	wp_enqueue_script('jush', WP_PLUGIN_URL.'/nivo-slider-light/jquery.nivo.slider.pack.js', array('jquery'));
-
-	echo '<link type="text/css" rel="stylesheet" href="'.WP_PLUGIN_URL.'/nivo-slider-light/nivo-slider.css" />'."\n";
-	echo '<link type="text/css" rel="stylesheet" href="'.WP_PLUGIN_URL.'/nivo-slider-light/custom-nivo-slider.css" />'."\n";
+	wp_enqueue_style('nivoStyleSheet', WP_PLUGIN_URL . '/nivo-slider-light/nivo-slider.css');
+	wp_enqueue_style('nivoCustomStyleSheet', WP_PLUGIN_URL . '/nivo-slider-light/custom-nivo-slider.css');
 }
 
 
@@ -51,7 +50,7 @@ function NivoHeader() {
 <?
 }
 
-if (!is_admin()) {
+if (!is_admin()  ) {
 	add_action('init', 'NivoInit');
 	add_action('wp_head', 'NivoHeader');
 }

@@ -47,6 +47,6 @@ Or ask the author of this Wordpress Plugin at [netaction.de](http://www.netactio
 = 1.0 =
 * stable version
 
-= 1.1 =
-* important bugfix
+= 1.2 =
+* bugfixes
 
