@@ -37,7 +37,7 @@ Be sure that all images have the same size. Feel free to edit the plugin's sourc
 
 For questions about NIVO visit the homepage [nivo.dev7studios.com](http://nivo.dev7studios.com/ "NIVO").
 
-Or ask the author of this Wordpress Plugin at [netaction.de](http://www.netaction.de/).
+Or ask the author of this Wordpress Plugin at [netaction.de](https://www.netaction.de/wordpress-plugin-nivo-slider-light/).
 
 == Changelog ==
 
@@ -47,6 +47,6 @@ Or ask the author of this Wordpress Plugin at [netaction.de](http://www.netactio
 = 1.0 =
 * stable version
 
-= 1.3 =
+= 1.4 =
 * bugfixes
 

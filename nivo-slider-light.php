@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: NIVO slider light
-Plugin URI: http://wordpress.org/extend/plugins/nivo-slider-light/
+Plugin URI: https://www.netaction.de/wordpress-plugin-nivo-slider-light/
 Description: This is a wrapper for the jQuery plugin NIVO Image Slider from dev7studios.
-Version: 1.3
+Version: 1.4
 Author: Thomas Schmidt
 Author URI: http://netaction.de
 */
