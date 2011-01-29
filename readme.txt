@@ -50,3 +50,6 @@ Or ask the author of this Wordpress Plugin at [netaction.de](https://www.netacti
 = 1.4 =
 * bugfixes
 
+= 1.5 =
+* jQuery noConflict
+

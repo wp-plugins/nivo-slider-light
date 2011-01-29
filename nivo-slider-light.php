@@ -3,16 +3,14 @@
 Plugin Name: NIVO slider light
 Plugin URI: https://www.netaction.de/wordpress-plugin-nivo-slider-light/
 Description: This is a wrapper for the jQuery plugin NIVO Image Slider from dev7studios.
-Version: 1.4
+Version: 1.5
 Author: Thomas Schmidt
 Author URI: http://netaction.de
 */
 
 
 function NivoInit() {
-	wp_deregister_script('jquery');
-	wp_register_script('jquery', WP_PLUGIN_URL.'/nivo-slider-light/jquery-1.4.2.min.js', false, '1.4.2');
-	wp_enqueue_script('jush', WP_PLUGIN_URL.'/nivo-slider-light/jquery.nivo.slider.pack.js', array('jquery'));
+	wp_enqueue_script('nivoSliderScript', WP_PLUGIN_URL.'/nivo-slider-light/jquery.nivo.slider.pack.js', array('jquery'));
 	wp_enqueue_style('nivoStyleSheet', WP_PLUGIN_URL . '/nivo-slider-light/nivo-slider.css');
 	wp_enqueue_style('nivoCustomStyleSheet', WP_PLUGIN_URL . '/nivo-slider-light/custom-nivo-slider.css');
 }
@@ -21,11 +19,12 @@ function NivoInit() {
 function NivoHeader() {
 ?>
 <script type="text/javascript">
-	$(function() {
-		$(".nivoSlider br").each(function(){ // strip BR elements created by Wordpress
-			$(this).remove();
+	jQuery.noConflict();
+	jquery(function() {
+		jquery(".nivoSlider br").each(function(){ // strip BR elements created by Wordpress
+			jquery(this).remove();
 		});
-		$('.nivoSlider').nivoSlider({
+		jquery('.nivoSlider').nivoSlider({
 			effect:'fade', //Specify sets like: 'random,fold,fade,sliceDown'
 			animSpeed:500, //Slide transition speed
 			pauseTime:3000,
@@ -34,7 +33,7 @@ function NivoHeader() {
 			directionNavHide:true, //Only show on hover
 			controlNav:true, //1,2,3...
 			controlNavThumbs:false, //Use thumbnails for Control Nav
-		    controlNavThumbsFromRel:false, //Use image rel for thumbs
+			controlNavThumbsFromRel:false, //Use image rel for thumbs
 			controlNavThumbsSearch: '.jpg', //Replace this with...
 			controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
 			keyboardNav:true, //Use left & right arrows
