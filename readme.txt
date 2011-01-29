@@ -53,3 +53,6 @@ Or ask the author of this Wordpress Plugin at [netaction.de](https://www.netacti
 = 1.5 =
 * jQuery noConflict
 
+= 1.6 =
+* bugfixes
+
