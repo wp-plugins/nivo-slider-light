@@ -47,12 +47,9 @@ Or ask the author of this Wordpress Plugin at [netaction.de](https://www.netacti
 = 1.0 =
 * stable version
 
-= 1.4 =
-* bugfixes
-
 = 1.5 =
 * jQuery noConflict
 
-= 1.7 =
-* bugfixes
+= 1.8 =
+* Update to NIVO 2.4
 
