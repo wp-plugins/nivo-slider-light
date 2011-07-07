@@ -2,7 +2,7 @@
 Contributors: Thomas Schmidt
 Tags: nivo, slider, gallery, slideshow, jquery
 Requires at least: 2.8
-Tested up to: 3.0.1
+Tested up to: 3.2
 Stable tag: trunk
 
 The NIVO slider light plugin includes the JQuery NIVO Slider into your wordpress blog. It does not touch any other gallerys.
@@ -52,4 +52,7 @@ Or ask the author of this Wordpress Plugin at [netaction.de](https://www.netacti
 
 = 1.8 =
 * Update to NIVO 2.4
+
+= 1.9 =
+* Update to NIVO 2.6
 
