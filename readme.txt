@@ -53,6 +53,6 @@ Or ask the author of this Wordpress Plugin at [netaction.de](https://www.netacti
 = 1.8 =
 * Update to NIVO 2.4
 
-= 1.9 =
+= 1.10 =
 * Update to NIVO 2.6
 
