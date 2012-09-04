@@ -56,3 +56,6 @@ Or ask the author of this Wordpress Plugin at [netaction.de](https://www.netacti
 = 1.10 =
 * Update to NIVO 2.6
 
+= 1.11 =
+* Update to NIVO 3.1 Galeries are resizable now!
+
